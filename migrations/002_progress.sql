@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS progress_logs (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), profile_key text NOT NULL, weight_kg numeric(6,2) NOT NULL, calories numeric(7,2), protein_g numeric(7,2), nutrition_score numeric(5,2), note text, logged_at timestamptz NOT NULL DEFAULT now())
