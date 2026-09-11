@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS recommendation_history (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), profile jsonb NOT NULL, recommendations jsonb NOT NULL, ai_note text, created_at timestamptz NOT NULL DEFAULT now())
